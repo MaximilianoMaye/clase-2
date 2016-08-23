@@ -219,12 +219,74 @@
   			</article>
   		</section>
   		
- 
+ <section>
+ 	<table>
+ 		<tr>
+ 			<td>pises</td>
+ 			<td>bronce</td>
+ 			<td>plata</td>
+ 			<td>oro</td>
+ 		</tr>
+ 		<tr>
+ 			<td>argentina</td>
+ 			<td>5</td>
+ 			<td>6</td>
+ 			<td>8</td>
+ 		</tr>
+ 		<tr>
+ 			<td>basil</td>
+ 			<td>10</td>
+ 			<td>8</td>
+ 			<td>7</td>
+ 		</tr>
+ 		<tr>
+ 			<td>colombia</td>
+ 			<td>7</td>
+ 			<td>7</td>
+ 			<td>5</td>
+ 		</tr>
+ 	</table>
+ </section>
+<hr/>
+<section>
+	<form method="POST" action="enviar.php">
+	<label for="nombre">Nombre: </label>
+		<input type="text" name="nombre" placeholder="ingresa tu nombre" required="">
+		<br/>
+		<label for="correo">email</label>
+		<input type="email" name="correo" placeholder="ingresa tu correo">
+		<br/>
+	<label for="password">contraseña</label>	
+		<input type="password" name="password" placeholder="ingresa tu contraseña">
+		<br/>
+	</form>
+
+	<label for="edad">edad</label>
+	<input type="number" name="edad" placeholder="tu edad">
+	<br/>
+
+	<label for="mensajes">comentarios</label>
+	<textarea name="comentarios" rows="10" cols="40" placeholder="escribe aqui tus comentarios"></textarea>
+
+	<label for="destino">destino</label>
+	<select name="destino" required="">
+		<option value="">selecionar destino</option>
+		<option value="caba">ciudad de buenos aires</option>
+		<option value="ba">buenos aires</option>
+		<option value="er">entre rios</option>
+		<option value="sf">santa fe</option>
+	</select>
+	<label for="entrega">metodo de entrega</label>
+	<input type="radio" value="delivery" name="entrega"><span>delivery</span>
+	<input type="radio" value="local" name="entrega"><span>retira por el local</span>
+	<label for="cv">curriculum</label>
+	
+	<input type="submit" value="enviar formulario" name="">
 
 
 
+</section>
 
-  	
 
 </body>
 </html>
